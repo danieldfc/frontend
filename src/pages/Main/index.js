@@ -1,18 +1,18 @@
-import React, { Component } from "react";
-import api from "../../services/api";
+import React, { Component } from 'react';
+import api from '../../services/api';
 
-import logo from "../../assets/logo.svg";
-import { Container, SubmitButton } from "./styles";
+import logo from '../../assets/logo.svg';
+import { Container, SubmitButton } from './styles';
 
 export default class Main extends Component {
   state = {
-    newBox: ""
+    newBox: '',
   };
 
   handleSubmit = async e => {
     e.preventDefault();
-    const response = await api.post("boxes", {
-      title: this.state.newBox
+    const response = await api.post('boxes', {
+      title: this.state.newBox,
     });
 
     this.props.history.push(`/box/${response.data._id}`);

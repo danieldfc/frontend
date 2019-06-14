@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   height: 100%;
@@ -22,7 +22,7 @@ export const Container = styled.div`
 
 export const SubmitButton = styled.button`
   height: 48px;
-  background: ${props => props.color || "#7159c1"};
+  background: ${props => props.color || '#7159c1'};
   border-radius: 4px;
   font-size: 16px;
   padding: 0 20px;
